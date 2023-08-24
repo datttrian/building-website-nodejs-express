@@ -32,5 +32,8 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     }
+  },
+  "emmet.includeLanguages": {
+    "ejs": "html"
   }
 }
