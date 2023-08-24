@@ -44,7 +44,8 @@
     "VisualStudioExptTeam.intellicode-api-usage-examples",
     "Postman.postman-for-vscode",
     "aaron-bond.better-comments",
-    "vinliao.fast-arrow"
+    "vinliao.fast-arrow",
+    "DigitalBrainstem.javascript-ejs-support"
     // Additional Extensions Here
   ],
   "onCreateCommand": "echo 'export PS1=\"\\W $ \"' >> ~/.bashrc",
