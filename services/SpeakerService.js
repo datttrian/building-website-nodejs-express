@@ -25,10 +25,10 @@ class SpeakerService {
     const data = await this.getData();
 
     // We are using map() to transform the array we get into another one
-    return data.map((speaker) => {
-      throw new Error('Async await error');
-      return { name: speaker.name, shortname: speaker.shortname };
-    });
+    return data.map((speaker) =>
+      // throw new Error("Async await error")
+      ({ name: speaker.name, shortname: speaker.shortname })
+    );
   }
 
   /**
