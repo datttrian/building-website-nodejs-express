@@ -3,6 +3,7 @@ const path = require('path');
 const cookieSession = require('cookie-session');
 const rand = require('random-key');
 const createError = require('http-errors');
+const bodyParser = require('body-parser');
 
 const FeedbackService = require('./services/FeedbackService');
 const SpeakersService = require('./services/SpeakerService');
@@ -24,6 +25,8 @@ app.use(
     keys: [rand.generate(), rand.generate()],
   })
 );
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
