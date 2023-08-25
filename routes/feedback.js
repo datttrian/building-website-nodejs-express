@@ -69,7 +69,7 @@ module.exports = (params) => {
       await feedbackService.addEntry(name, email, title, message);
       const feedback = await feedbackService.getList();
 
-      return response.json(feedback);
+      return response.json({ feedback, successMessage: 'Thank you for your feedback.' });
     } catch (error) {
       return next(error);
     }
